@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierson Lee | Mechatronics Engineer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="assets/project-media/icon.ico">
+</head>
+<body>
+    <main class="container">
+        <!--Name-->
+        <header style="display: flex; justify-content: space-between; align-items: start; gap: 20px;">
+            <div>
+                <h1>Pierson Lee</h1>
+                <p class="subtitle">Mechatronics Engineering at the University of Waterloo</p>
+                <div class="links">
+                    <a href="assets/resume.pdf" target="_blank">Resume</a>
+                    <a href="https://www.linkedin.com/in/pierson-lee/" target="_blank">LinkedIn</a>
+                    <a href="mailto:pierson.lee@uwaterloo.ca">Email</a>
+                </div>
+            </div>
+            <img src="assets/project-media/me.png" alt="Pierson Lee" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border-color);">
+        </header>
+
+        <hr>
+
+        <!--Projects Section-->
+        <section class="section-group">
+            <!--Project Cards-->
+            <h2>Projects</h2>
+            
+            <article class="interactive-card" onclick="openModal('proj_crane')">
+                <div class="card-header">
+                    <div>
+                        <h3>Three Degree-of-Freedom Robotic Crane Arm</h3>
+                        <span class="sub-text">Arduino, SolidWorks, 3D Printing</span>
+                    </div>
+                    <span class="date">May 2026</span>
+                </div>
+            </article>
+
+            <article class="interactive-card" onclick="openModal('proj_climate')">
+                <div class="card-header">
+                    <div>
+                        <h3>3D Printer Room Climate System</h3>
+                        <span class="sub-text">JavaScript, HTML/CSS, Node.js, Express.js</span>
+                    </div>
+                    <span class="date">Apr 2026 - May 2026</span>
+                </div>
+            </article>
+
+            <article class="interactive-card" onclick="openModal('proj_mount')">
+                <div class="card-header">
+                    <div>
+                        <h3>BMW E46 Front Bumper Mount Holder</h3>
+                        <span class="sub-text">SolidWorks, 3D Printing, FEA</span>
+                    </div>
+                    <span class="date">Mar 2026</span>
+                </div>
+            </article>
+
+            <article class="interactive-card" onclick="openModal('proj_caps')">
+                <div class="card-header">
+                    <div>
+                        <h3>Custom BBS Wheel Center Cap and Lock Set</h3>
+                        <span class="sub-text">SolidWorks, 3D Printing</span>
+                    </div>
+                    <span class="date">Feb 2026</span>
+                </div>
+            </article>
+        </section>
+
+        <!--Experience Section-->
+        <section class="section-group">
+            <!--Experience Cards-->
+            <h2>Experience</h2>
+            
+            <article class="interactive-card" onclick="openModal('exp_i4i')">
+                <div class="card-header">
+                    <img src="assets/project-media/i4i_logo.jpg" class="company-logo">
+                    <div>
+                        <h3>Software Quality Analyst</h3>
+                        <span class="sub-text">i4i Inc.</span>
+                    </div>
+                    <span class="date">May 2025 - Aug 2025</span>
+                </div>
+            </article>
+
+            <article class="interactive-card" onclick="openModal('exp_uw')">
+                <div class="card-header">
+                    <img src="assets/project-media/uwfe_logo.jpg" class="company-logo">
+                    <div>
+                        <h3>Mechanical Engineer</h3>
+                        <span class="sub-text">UW Formula Electric</span>
+                    </div>
+                    <span class="date">Sep 2024 - Apr 2025</span>
+                </div>
+            </article>
+        </section>
+
+        <!--Skills Section-->
+        <section class="section-group">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <p><strong>Design:</strong> SolidWorks, FEA (SolidWorks Simulation, Ansys), Autodesk Fusion 360, GD&T, AutoCAD</p>
+                <p><strong>Manufacturing:</strong> 3D Printing (FDM), Lathe, Milling Machine, Sheet Metal Fabrication</p>
+                <p><strong>Languages & Embedded:</strong> C++, Arduino, ESP32, STM32, MATLAB, JavaScript, HTML/CSS, Git</p>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <a href="assets/portfolio.pdf" target="_blank">Download PDF Version</a>
+        </footer>
+    </main>
+
+    <!--Proj/Exp Card Logic-->
+    <div id="portfolio-modal" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
