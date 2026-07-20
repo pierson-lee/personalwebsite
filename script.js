@@ -1,6 +1,30 @@
 // Proj/Exp Card Contents
 const portfolioDatabase = {
     // Projects
+    proj_linact: {
+        title: "Precision Lead Screw Linear Actuator",
+        subtitle: "July 2026",
+        media: "assets/project-media/linact.png",
+        body: `
+            <p>A lead screw linear actuator designed for a 28BYJ-48 stepper motor.</p>
+            <h4>About the Project</h4>
+            <p>Process</p>
+            <ul>
+                <li>Modelled the full actuator assembly in SolidWorks to fit a 28BYJ-48 stepper motor</li>
+                <li>Took measurements of the motor geometry to ensure an interference/press fit between the lead screw hole and motor output shaft, as well as proper mounting hole alignment</li>
+                <li>Selected an M8 x 1.25 thread for the lead screw to balance precise linear motion and travel speed</li>
+            </ul>
+            <p>Results</p>
+            <ul>
+                <li>Actuator achieves a theoretical linear output force of approximately 60 N (~13 lbs) based on the 64:1 internal motor reduction and thread size</li>
+                <li>Verified the physical actuator assembly under loads up to 10 lbs</li>
+            </ul>
+        `,
+        images: [
+            "assets/project-media/linactassembly.png"
+        ]
+    },
+
     proj_crane: {
         title: "Three Degree-of-Freedom Robotic Crane Arm",
         subtitle: "May 2026",
